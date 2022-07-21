@@ -1,0 +1,54 @@
+.started {
+    max-width: 900px;
+    margin: 100px auto 50px;
+    border-radius: 30px;
+    background-color: #fbfbfb;
+    position: relative;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    *:not(img) {
+        position: relative;
+        z-index: 100;
+    }
+
+    &__heading {
+        margin-bottom: 30px;
+    }
+
+    &__desc {
+        max-width: 245px;
+        margin-bottom: 40px;
+        color: $gray-dark;
+    }
+
+    &__caption {
+        margin-bottom: 20px;
+    }
+
+    &__comment {
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+    }
+
+    &__smile {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(50% ,-50%);
+    }
+
+    @media screen and (max-width: 767.98px) {
+        margin-top: 0;
+       &__comment,
+       &__smile {
+           max-width: 20%;
+           transform: none;
+       }
+    }
+    
+}
